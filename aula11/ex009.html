@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições ex</title>
+</head>
+<body>
+    <h1>Veja se você e estrageiro:</h1>
+    <p>País em que você mora: <input type="text" name="txtnac" id="txtnac"></p>
+    <p>Digite seu nome: <input type="text" name="yname" id="yname"></p>
+    <input type="button" value="Enviar Informações" onclick="enviar()">
+    <div id="info">
+        
+    </div>
+
+    <script>
+        function enviar() {
+            var nacionalidade = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#info')
+            var pais = nacionalidade.value.toLowerCase()
+            var mostrar = nacionalidade.value
+            var yname = window.document.querySelector('input#yname') 
+            var outname = yname.value
+
+            res.innerHTML = `Olá ${outname}, Você é do país, ${mostrar}`
+            if (pais == 'brasil'){
+                res.innerHTML += `<p>Você é Brasileiro.</p>`
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro.</p>`
+            }
+        }       
+    </script>
+</body>
+</html>
