@@ -16,6 +16,7 @@ body {
 }
 h1 {
     font-size: 15pt;
+    padding-bottom: 10px;
 }
 .calculator {
     background-color: white;
