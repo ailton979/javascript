@@ -1,6 +1,6 @@
 var c = 1
 do {
-    console.log(`Conte de ${c} áte...`)
+    console.log(`Conte de ${c} até...10`)
     c++
 } while (c <= 10)
 

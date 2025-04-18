@@ -34,7 +34,7 @@ function verificar() {
                 img.setAttribute('src', 'imagens/foto_idoso_f_p.png')    
             }
         }
-        res.innerHTML = `Destectamos ${gênero} com idade calculada de ${idade} anos.`
+        res.innerHTML = `Detectamos ${gênero} com idade calculada de ${idade} anos.`
         res.appendChild(img)
     }
 }
