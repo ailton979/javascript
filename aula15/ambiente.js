@@ -15,7 +15,7 @@ for (pos = 0; pos<num.length; pos++) {
 
 var num = ["Ailton", "Adriana", "Afonso", "Silvana", "Igor", "Mayara", "Joel"]
 
-num.sort()
+num.sort(   )
 
 
 for (pos = 0; pos<num.length; pos++) {
